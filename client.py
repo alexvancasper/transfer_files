@@ -26,10 +26,13 @@ def padding(name):
 	new_name=padGen(15-len(name))+name
 	return new_name
 
+#Server's IP address and port
+host=''
+port=
 
 sock=socket.socket()
 try:
-    sock.connect(('',8080))
+    sock.connect((host,port))
 except:
     print "Cannot connect to server";
     exit()
