@@ -29,15 +29,16 @@ def padding(name):
 
 sock=socket.socket()
 try:
-    sock.connect(('194.58.88.242',8080))
+    sock.connect(('',8080))
 except:
     print "Cannot connect to server";
     exit()
 
 print "Connected"
 
-path='/home/alex/Desktop/python/'
-filename=sys.argv[1]
+path='/path/to/file'
+#Name of file, from CLI
+filename=sys.argv[1]  
 fullpath=path+filename
 filesize=getSize(fullpath)
 print "File: " +path +filename + " Size: " + str(filesize)
