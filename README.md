@@ -1,6 +1,10 @@
 Simple transfer any files between client and server.
 Wrote on the Python under the Ubuntu.
 
+Server.py is listening port on the server.
+Client.py is connecting to server
+then client send the file to the server, server will calculate MD5 hash and return it back.
+
 
 sample executing:
 # ./server.py
